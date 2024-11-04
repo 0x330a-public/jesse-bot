@@ -1,0 +1,15 @@
+[package]
+name = "jesse-bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jesse = { git = "https://github.com/0x330a-public/jesse.git", rev = "afc9b1953d47ea3e3119fb9698feaf5cc9c6e832", version = "0.1" }
+tokio = { version = "1", features = ["full"] }
+eyre = "0.6"
+alloy = { version = "0.5", features = ["signer-local", "providers"] }
+ed25519-dalek = "2"
+fatline-rs = { git = "https://github.com/0x330a-public/fatline-rs.git", branch = "master" }
+clokwerk = "0.4"
+dotenvy = "0.15"
+dotenvy_macro = "0.15"
